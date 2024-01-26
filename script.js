@@ -1,23 +1,14 @@
-$(document).ready(function() {
-    function changeState(faceImage, backgroundClass) {
-        $('#roboBuddyFace').attr('src', 'images/' + faceImage);
-        $('body').removeClass().addClass(backgroundClass);
-        triggerConfetti(); // Trigger confetti on state change
-    }
+$(document).ready(function(){
+    $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
 
-    function triggerConfetti() {
-        confetti({
-            particleCount: 300,
-            spread: 100,
-            origin: { y: 0.6 },
-            zIndex: -1 // Directly setting z-index here
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').animate({
+            'scrollTop': $target.offset().top
+        }, 1000, 'swing', function () {
+            window.location.hash = target;
         });
-    }
-
-    $('#btnNeutral').click(function() { changeState('Neutral.png', 'neutral-bg'); });
-    $('#btnHappy').click(function() { changeState('Happy.png', 'happy-bg'); });
-    $('#btnCurious').click(function() { changeState('Surprised.png', 'curious-bg'); });
-    $('#btnSurprised').click(function() { changeState('Curious.png', 'surprised-bg'); });
-    $('#btnEvil').click(function() { changeState('Evil.png', 'evil-bg'); });
-    $('#btnPleading').click(function() { changeState('Pleading.png', 'pleading-bg'); });
+    });
 });

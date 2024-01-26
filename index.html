@@ -1,29 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>RoboBuddy Interactive</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Robo Buddy</h1>
-    </header>
-    <canvas id="canvas"></canvas>
-    <div class="container">
-        <div id="buttons">
-            <button id="btnNeutral"><img src="images/Neutral Button.png" alt="Neutral"></button>
-            <button id="btnHappy"><img src="images/Happy Button.png" alt="Happy"></button>
-            <button id="btnCurious"><img src="images/Curious button.png" alt="Curious"></button>
-            <button id="btnSurprised"><img src="images/Surprised button.png" alt="Surprised"></button>
-            <button id="btnEvil"><img src="images/Evil Button.png" alt="Evil"></button>
-            <button id="btnPleading"><img src="images/Pleading button.png" alt="Pleading"></button>
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <img src="path_to_your_image.jpg" alt="Your Image" class="hero-image">
+        <h1>Your Name</h1>
+        <p>Hero text goes here...</p>
+    </section>
+
+    <section id="work">
+        <!-- Work examples in a 3x2 grid -->
+        <div class="grid">
+            <!-- Add your work items here -->
         </div>
-        <div id="roboBuddyContainer">
-            <img src="images/Neutral.png" id="roboBuddyFace" alt="RoboBuddy Face">
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Adobe Suite</li>
+            <li>Blender</li>
+            <li>Figma</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Webflow</li>
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <!-- Contact information or form -->
+    </section>
+
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 </body>
 </html>
