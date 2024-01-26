@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Align header and main container vertically */
+  align-items: center;
+}
+
+header {
+  background-color: rgba(50, 50, 50, 0.3); /* 50% opaque background */
+  color: #fff7e1;
+  text-align: center;
+  padding: 15px 0;
+  font-family: "Orbitron", sans-serif;
+  font-size: 30px;
+  border-radius: 30px;
+  box-shadow: 0 0 5px 4px rgba(136, 136, 136, 0.2);
+  width: 80vh;
+  margin-top: 10px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  backdrop-filter: blur(5px); /* Blur effect */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px; /* Space between buttons and RoboBuddy */
+}
+
+#buttons button {
+  border: none;
+  background: #fff7e1;
+  border-radius: 15px;
+  margin: 5px 0;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px 4px rgba(136, 136, 136, 0.2);
+}
+
+#buttons img {
+  display: block;
+  width: 50px;
+  height: auto;
+}
+
+#roboBuddyContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#roboBuddyFace {
+  max-height: 50vh;
+  max-width: 100%;
+  border-radius: 30px;
+  box-shadow: 0 0 5px 4px rgba(136, 136, 136, 0.2);
+}
+
+/* Gradient backgrounds */
+.neutral-bg {
+  background-image: linear-gradient(to right, #e0e0e0, #f0f0f0);
+}
+.happy-bg {
+  background-image: linear-gradient(to right, #ffdd99, #ffcc66);
+}
+.curious-bg {
+  background-image: linear-gradient(to right, #99ccff, #6699ff);
+}
+.surprised-bg {
+  background-image: linear-gradient(to right, #ff9999, #ff6666);
+}
+.evil-bg {
+  background-image: linear-gradient(to right, #666666, #333333);
+}
+.pleading-bg {
+  background-image: linear-gradient(to right, #ccffcc, #99cc99);
+}
